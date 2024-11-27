@@ -16,7 +16,7 @@ html,body{
     height: 100vh;
   
 }
-/* Navbar Styling */
+
 header {
     position: fixed;
     top: 0;
@@ -26,8 +26,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
-    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    background: rgba(0, 0, 0, 0.4); 
+    backdrop-filter: blur(10px); 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   }
 
@@ -40,7 +40,7 @@ header {
 
   #logo h2 span img {
     margin-left: 8px;
-    width: 30px;
+    width: 25px;
     height: 20px;
   }
 
@@ -86,9 +86,9 @@ header {
   }
 
   button:hover {
-    background-color: #18d685;
+
     transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0, 255, 127, 0.5);
+
   }
 
   button img {
@@ -100,7 +100,7 @@ header {
     outline: none;
   }
 
-  /* Responsive Design */
+
   @media (max-width: 768px) {
     header {
       flex-direction: column;
@@ -148,11 +148,14 @@ header {
     
 text-decoration: none;
 border-radius: 50px;
+cursor: pointer;
+transition: all ease-out;
 
 }
+
 .GENERE {
     padding: 50px 5%;
-    background-color: #111111; /* Match the theme */
+    background-color: #111111;
 }
 
 #firstline, #secondline {
@@ -166,29 +169,28 @@ border-radius: 50px;
 .box1, .box2 {
     flex: 1;
     padding: 20px;
-    background: linear-gradient(135deg, #1DB954, #1ed760); /* Vibrant gradient */
-    border-radius: 15px; /* Rounded edges for modern look */
+    background: linear-gradient(135deg, #1DB954, #1ed760); 
+    border-radius: 15px;
     color: white;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth animations */
+    transition: transform 0.3s, box-shadow 0.3s; 
 }
 
 .box1:hover, .box2:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
 }
 
 .box1 h2, .box2 h2 {
     font-size: 1.8rem;
     margin-bottom: 10px;
     font-family: "Cinzel", serif;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Adds a classy glow */
-}
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); }
 
 .box1 p, .box2 p {
     font-size: 1rem;
@@ -197,7 +199,7 @@ border-radius: 50px;
     color: #e0e0e0;
 }
 
-/* Specific Background Images (Optional) */
+
 #box1 {
     background-image: url('https://i.pinimg.com/enabled_lo_mid/736x/c1/c5/64/c1c56464224a8822cf3cb43c95e52c48.jpg');
     background-size: cover;
@@ -241,8 +243,7 @@ border-radius: 50px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-/* Trending Section */
-/* Trending Section Styling */
+
 #trending {
     background: linear-gradient(135deg, #1a1a1a, #333);
     color: white;
@@ -311,7 +312,7 @@ border-radius: 50px;
     font-size: 1.1em;
     color: #bbb;
 }
-/* Section Styling */
+
 .featured-artists {
   padding: 40px;
   background-color: #1a1a1a;
@@ -323,7 +324,7 @@ border-radius: 50px;
   margin-bottom: 20px;
 }
 
-/* Carousel Container */
+
 .carousel {
   display: flex;
   gap: 85px;
@@ -336,7 +337,7 @@ border-radius: 50px;
   display: none; 
 }
 
-/* Carousel Cards */
+
 .carousel-card {
   background: #2c2c2c;
   border-radius: 10px;
@@ -448,4 +449,55 @@ footer {
     margin-top: 20px;
     font-size: 14px;
   }
+
+
+
+.get-started-body {
+  background: radial-gradient(circle at center, #1a1a1a, #000000);
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  height: 100vh;
+
+
+ 
+  overflow: hidden;
+
+}
+
+
+.get-started-container {
+
+
   
+  height: 200px;
+ width: 200PX  ;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.9);
+ 
+  position: relative;
+  z-index: 2;
+  background-image: url(https://i.pinimg.com/736x/90/f4/e3/90f4e323f86c06b3977ea1bf79a37a08.jpg);
+  background-position: center;
+  object-fit: cover;
+  background-size: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,90%);
+
+}
+
+
+.get-started-body video{
+  background-position: top;
+  object-fit: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  
+}
+#first{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
